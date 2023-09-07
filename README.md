@@ -1,4 +1,4 @@
-![WhatsApp Image 2023-09-01 at 19 24 50](https://github.com/Natalia24v/TurnowApp/assets/88351561/9184d9e4-b722-424c-8ce1-b0064d62ddbe)
+![image](https://github.com/Natalia24v/TurnowApp/assets/88351561/5d017d0e-c35f-4930-bba2-cd9293f4ae30)
 
 # AppISPC2
 
