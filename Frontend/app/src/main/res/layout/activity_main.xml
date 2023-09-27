@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_centerInParent="true"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TurNow"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Correo Electrónico"
+        android:textColorHint="#847e79" />
+
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextCorreo"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Contraseña"
+        android:textColorHint="#847e79" />
+
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContraseña"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="122dp"
+        android:background="#a36cff"
+        android:text="Iniciar Sesión"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/linkRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#007BFF"
+        android:textSize="15dp"
+        android:text="¿No tienes cuenta? Click aquí para registrarte"
+        android:textStyle="underline"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-366dp"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>
