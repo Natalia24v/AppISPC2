@@ -17,11 +17,19 @@
             android:exported="false" />
         <activity
             android:name=".Contact"
+            android:parentActivityName=".home"
             android:exported="false" />
         <activity
             android:name=".Registro"
+            android:parentActivityName=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_registro"
+            android:theme="@style/Theme.AplicacionISPC"/>
+        <activity
+            android:name=".home"
+            android:parentActivityName=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
             android:theme="@style/Theme.AplicacionISPC" />
         <activity
             android:name=".MainActivity"
