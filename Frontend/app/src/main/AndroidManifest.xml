@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AplicacionISPC"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+       <activity
             android:name=".formularioTurno"
             android:exported="false" />
         <activity
