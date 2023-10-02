@@ -80,7 +80,6 @@
         android:textColor="#007BFF"
         android:textSize="15dp"
         android:text="¿No tienes cuenta? Click aquí para registrarte"
-        android:textStyle="underline"
         />
 
     <ImageView
