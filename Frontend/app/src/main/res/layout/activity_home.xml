@@ -1,95 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:layout_centerInParent="true"
+    android:background="#000000"
     tools:context=".HomeActivity">
 
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#a36cff">
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_box"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="TURNOW"
+        app:titleTextColor="#FFFFFF"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        app:titleMarginStart="130dp"/>
+
+    <ImageButton
+        android:id="@+id/toolbar_iconRegistro"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/default_box"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
 
 
-        <ImageButton
-            android:id="@+id/toolbar_iconRegistro"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/baseline_arrow_back_ios_24" />
+        <Button
+            android:id="@+id/btnContacto"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/white_box"
+            android:gravity="center"
+            android:text="@string/contacto" />
+
+
+        <Button
+            android:id="@+id/btnSacarTurno"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_box"
+            android:gravity="center"
+            android:text="@string/sacar_turno" />
 
 
         <TextView
-            android:id="@+id/toolbar_titleRegistro"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:text="TurNow"
-            android:textColor="@color/white"
-            android:textSize="50dp" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <LinearLayout
-        android:layout_width="341dp"
-        android:layout_height="550dp"
-        android:layout_below="@+id/toolbar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="20dp"
-        android:background="#a36cff"
-        android:orientation="vertical">
-
-
-        <EditText
-            android:id="@+id/editTextContacto"
+            android:id="@+id/textVersion"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="32dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="32dp"
-            android:background="@color/white"
+            android:background="@drawable/alert_box"
             android:gravity="center"
-            android:hint="@string/contacto"
-            android:textColorHint="#847e79" />
-
-
-        <EditText
-            android:id="@+id/editTextSacarturno"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="32dp"
-            android:background="@color/white"
-            android:gravity="center"
-            android:hint="@string/sacar_turno"
-            android:textColorHint="#847e79" />
-
-
-        <EditText
-            android:id="@+id/editTextVersion"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="32dp"
-            android:background="@color/white"
-            android:gravity="center"
-            android:hint="@string/version"
+            android:text="@string/version"
             android:textColorHint="#847e79" />
 
     </LinearLayout>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

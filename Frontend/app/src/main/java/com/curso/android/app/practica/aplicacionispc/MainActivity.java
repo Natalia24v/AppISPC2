@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        Cambiar Registro por el nombre de la pantalla de Home
         btnEnviar.setOnClickListener(v -> {
-            Intent intent = new Intent(this, home.class);
+            Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
         });
 
