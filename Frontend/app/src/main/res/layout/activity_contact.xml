@@ -173,7 +173,6 @@
         app:title="TURNOW"
         app:titleTextColor="#FFFFFF"
         app:titleTextAppearance="@style/ToolbarTitleText"
-        app:titleMarginStart="140dp"
-        app:titleMarginEnd="120dp"/>
+        app:titleMarginStart="130dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

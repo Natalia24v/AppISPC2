@@ -13,13 +13,24 @@
         android:theme="@style/Theme.AplicacionISPC"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+       <activity
+            android:name=".formularioTurno"
+            android:parentActivityName=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Contact"
+            android:parentActivityName=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".Registro"
+            android:parentActivityName=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_registro"
-            android:theme="@style/Theme.AplicacionISPC" />
+            android:theme="@style/Theme.AplicacionISPC"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
